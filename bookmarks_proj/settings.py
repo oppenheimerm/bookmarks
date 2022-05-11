@@ -126,7 +126,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
+
+# Which URL to redirect the user to after a successful login if no "next" param is present in request
+LOGIN_REDIRECT_URL = 'dashboard'
+# The URL to redirect the user to log in
+LOGIN_URL = 'login'
+#   The URL to redirect the user to log out
+LOGOUT_URL = 'logout'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

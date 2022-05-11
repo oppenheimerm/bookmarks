@@ -1,7 +1,7 @@
-# WheelTheHood (backend) web app with PostgreSQL in Azure
+# Bookmarks Social Website
 
 ## About
-[some info about this app here]
+Building a social website to learn me some Django.  Users are able to join this online platform and interact with each other by sharing content.  Users will be able to bookmark any image on the internet and share it wih others.  They will also be able to see activity on the platform from the users they follow and like/unlike the image shared by them.
 
 ## Requirements
 
